@@ -11,6 +11,7 @@ function ChatsPage({ searchParams: { error } }: Props) {
       {/* Chat Permission Chat */}
 
       {/* ChatList */}
+      <ChatList />
     </div>
   );
 }

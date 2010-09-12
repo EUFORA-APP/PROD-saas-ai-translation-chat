@@ -4,10 +4,9 @@ function ChatPage() {
       {/* Admin Controls */}
       {/* ChatMember Settings */} 
 
-        {/* Chat Messages */ }
+      {/* Chat Messages */ }
 
-        {/* Chat Input */}
-        <ChatList />
+      {/* Chat Input */}
     </>
   )
 }
