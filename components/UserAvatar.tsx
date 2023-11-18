@@ -23,7 +23,9 @@ function UserAvatar({
       />
       )}
       <AvatarImage src="https://cloud.appwrite.io/v1/storage/buckets/roar/files/65516e6139812500b79e/preview?width=2000&height=2000&gravity=top&quality=100&project=roar" />
-      <AvatarFallback>CN</AvatarFallback>
+      <AvatarFallback>
+        
+      </AvatarFallback>
     </Avatar>
   )
 }
