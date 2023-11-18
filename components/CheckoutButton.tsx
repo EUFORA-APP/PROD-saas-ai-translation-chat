@@ -2,10 +2,8 @@ import React from 'react'
 
 function CheckoutButton() {
   return (
-    <div>
-      CheckoutButtonLastOnePassionProjectActuallyInterestedInThisOne
-    </div>
+    <div className='bg-red-200 text-red-400'>CheckoutButton</div>
   )
 }
 
-export default CheckoutButton
+export default CheckoutButton;
