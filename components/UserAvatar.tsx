@@ -7,19 +7,19 @@ function UserAvatar({
   image,
   className,
 }: {
-  name: string;
-  image: string;
+  name?: string | null;
+  image?: string | null;
   className?: string;
 }) {
   return (
-    <Avatar className={cn("bg-white text-black", className)}>
+    <Avatar className={cn("bg-white text-black ", className)}>
       {image && (
         <Image
         src={image}
-        alt={name}
+        alt={name || "User name"}
         width={40}
         height={40}
-        className="rounded-full"
+        className="rounded-full "
       />
       )}
       <AvatarImage src="https://cloud.appwrite.io/v1/storage/buckets/roar/files/65516e6139812500b79e/preview?width=2000&height=2000&gravity=top&quality=100&project=roar" />
