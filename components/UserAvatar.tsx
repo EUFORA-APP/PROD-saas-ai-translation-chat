@@ -17,8 +17,8 @@ function UserAvatar({
         <Image
         src={image}
         alt={name}
-        width={42/*0 $CGC*/}
-        height={42/*0 $CGC*/}
+        width={42/*0 $CGC deep value*/}
+        height={42/*0 $CGC deep value*/}
         className="rounded-full"
       />
       )}
