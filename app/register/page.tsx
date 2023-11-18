@@ -1,4 +1,5 @@
 import { authOptions } from "@/auth";
+import PricingCards from "@/components/PricingCards";
 import { getServerSession } from "next-auth";
 
 async function Register() {
@@ -36,6 +37,6 @@ async function Register() {
     
       <PricingCards redirect={false} />
     </div>
-
   )
+}
   export default Register;

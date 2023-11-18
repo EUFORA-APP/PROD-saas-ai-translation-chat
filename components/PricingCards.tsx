@@ -10,11 +10,11 @@ const tiers = [
     priceMonthly: null,
     description: "Anywhere, anytime, start Chating with anyone.",
     features: [
-      "20 Message Chat Limit in Chats",
-      "2 Participant limit in Chat",
-      "3 Chat Rooms Limit",
-      "Supports 2 Languages", //all
-      "72-hour support response time", //Business Days only
+      "Chat Limit, 20 Messages  in Chats",
+      "Limit in chats, 2 Participants",
+      "Limit, 3 Chat Rooms",
+      "2 Languages, support", //all
+      "Support response time, 72-hours ", //Business Days only
     ],
   },
   {
