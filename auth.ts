@@ -15,4 +15,4 @@ export const authOptions: NextAuthOptions = {
     strategy: 'jwt',
   },
   adapter: FirestoreAdapter(adminDb),
-} satisfies NextAuthOptions; 
+} satisfies NextAuthOptions;  
