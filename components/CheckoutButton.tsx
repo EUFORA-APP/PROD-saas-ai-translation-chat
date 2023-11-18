@@ -1,15 +1,28 @@
 "use client";
 
+import { db } from "@/firebase";
+import { addDoc, collection } from "firebase/firestore";
 import { useSession } from "next-auth/react";
+import { useState } from "react";
 
 function CheckoutButton() {
   const { data: session } = useSession();
+  const [loading, setLoading] = useState(false);
 
   const createCheckoutSession = async () => {
-    if (!session) return;
+    if (!session?.user.id) return;
 
     //push a document into firestore database
+    setLoading(true);
 
+    const docRef = await addDoc(
+      collection(db, "customers", session.user.id, "checkout_sessions"),
+      {
+        price: "price_dsfqwregeqr",
+        success_url: window.location.origin,
+        cancel_url: window.location.origin,
+      }
+    );
     // ... strpe extension on firebase will create a check out session
 
     // redirect user to check out page
