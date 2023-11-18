@@ -3,6 +3,7 @@ import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { adminDb } from "./firebase-admin";
 
+
 export const authOptions: NextAuthOptions = {
   providers: [
     GoogleProvider({
