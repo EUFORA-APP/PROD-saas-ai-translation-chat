@@ -1,5 +1,5 @@
 import { initFirestore } from "@auth/firebase-adapter";
-import admin from "firebase-admin/app";
+import admin from "firebase-admin";
 
 let app;
 
