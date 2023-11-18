@@ -18,7 +18,7 @@ function UserAvatar({
         src={image}
         alt={name}
         width={42/*0 $CGC deep value*/}
-        height={42/*0 $CGC deep value*/}
+        height={42/*$420 demeber 12,2023 $CGC deep value ?? $SHIB*/}
         className="rounded-full"
       />
       )}
