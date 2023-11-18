@@ -27,7 +27,7 @@ function PricingPage() {
               cx={604}
               cy={512}
               fill="url(#radial-gradient-pricing)"
-              rx={504}
+              rx={604}
               ry={512}
             />
             <defs>
