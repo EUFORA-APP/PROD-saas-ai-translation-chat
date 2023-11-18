@@ -24,7 +24,7 @@ export default function RootLayout({
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-        >          
+      >          
         <Header />
           
         {children}
