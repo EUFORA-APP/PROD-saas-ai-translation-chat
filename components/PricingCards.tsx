@@ -19,18 +19,18 @@ const tiers = [
   },
   {
     name: "Pro Tier",
-    id: "", //stripe subscription id
+    id: "pro", 
     href: "#",
-    priceMonthly: "£0.99", //$?
+    priceMonthly: "$0.99",
     description: "Pro Tier, Unlock Your Full Potential.",
     features: [
       "Chats, Unlimited Messages",
       "Participants in Chats, Unlimited",
       "Chat Rooms, Unlimited",
-      "10 Languages, it supports",//add *
-      "24-hour, dedicated support response time",
+      "Learn a new language, travel and communicate with ease.",
+      "2)+ Languages, more on the way!",//add *
+      "Around the World,",
       "Early access to New Features",
-      "Coming Soon, access to Multimedia support in chats",
     ],
   },
 ];
