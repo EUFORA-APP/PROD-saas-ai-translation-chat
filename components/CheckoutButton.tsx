@@ -22,7 +22,7 @@ function CheckoutButton() {
         success_url: window.location.origin,
         cancel_url: window.location.origin,
       }
-    );
+    ); 
     // ... strpe extension on firebase will create a check out session
 
     // redirect user to check out page
