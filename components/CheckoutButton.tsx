@@ -67,7 +67,7 @@ function CheckoutButton() {
         ) : isLoadingSubscription || loading ? (
           <LoadingSpinner />
         ) : (
-          "Sign the fuck pussy ass bitch ass looking ass no pro ass hehe"
+          "Sign Up GAATMMMMMMMM"
         )}
       </button>
     </div>
