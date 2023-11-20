@@ -67,7 +67,7 @@ function CheckoutButton() {
         ) : isLoadingSubscription || loading ? (
           <LoadingSpinner />
         ) : (
-          "Sign Up GAATMMMMMMMM"
+          "Sign Up"
         )}
       </button>
     </div>
