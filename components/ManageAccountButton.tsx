@@ -1,11 +1,11 @@
-'use client'
+
 
 function ManageAccountButton() {
   return (
-    <div>
-      
-    </div>
-  )
+    <form action={generatePortalLink}>
+      <button type="submit">Manage Billing</button>
+    </form>
+  );
 }
 
 export default ManageAccountButton
