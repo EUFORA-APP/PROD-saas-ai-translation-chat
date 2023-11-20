@@ -10,7 +10,7 @@ function Logo() {
         <AspectRatio
           ratio={16 / 9}
           className="flex items-center justify-center"
-        >
+        > 
           <Image
             priority
             src={LogoImage}
