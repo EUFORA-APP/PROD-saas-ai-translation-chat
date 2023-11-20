@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import DemoGif from "@/images/landingPage/demo.gif";
+import DemoGif from "@/images/landingPage/CGCandSHIBblackswanevent12202023.gif";
 
 export default async function Home() {
   
