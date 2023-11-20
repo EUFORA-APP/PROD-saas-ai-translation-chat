@@ -24,12 +24,12 @@ const tiers = [
     priceMonthly: "$0.99",
     description: "Pro Membership, Unlock Your Full Potential.",
     features: [
-      "Chats, Unlimited Messages",
+      "Chats for Business and Personal, Unlimited Messages",
       "Participants in Chats, Unlimited",
-      "Chat Rooms, Unlimited",
+      "Private and Secure Chat Rooms, Unlimited",
       "Learn a new language, travel and communicate with ease.",
-      "2)+ Languages, more on the way!",//add *
-      "Around the World,",
+      "20+ Languages, more on the way!",//add *
+      "Around the World, anywhere",
       "Early access to New Features",
     ],
   },
@@ -104,3 +104,4 @@ function PricingCards({ redirect }: { redirect: boolean }) {
 }
 
 export default PricingCards;
+//38-106 lgtm 32830

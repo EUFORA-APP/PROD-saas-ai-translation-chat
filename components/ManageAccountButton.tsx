@@ -1,4 +1,4 @@
-
+import { generatePortalLink } from "@/actions/generatePortalLink";
 
 function ManageAccountButton() {
   return (
@@ -8,4 +8,4 @@ function ManageAccountButton() {
   );
 }
 
-export default ManageAccountButton
+export default ManageAccountButton;
