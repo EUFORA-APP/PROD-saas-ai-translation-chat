@@ -49,6 +49,6 @@ const subscriptionConverter: FirestoreDataConverter<Subscription> = {
 };
 
 export const subscriptionRef = (userId: string) =>
-  collection(db, "cutomers", userId, "subscriptions").withConverter(
+  collection(db, "customers", userId, "subscriptions").withConverter(
     subscriptionConverter
   );

@@ -34,7 +34,7 @@ export default async function Home() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/chat"
-                className="rounded-full bg-[#6d30a7] px-3.5 py-2.5 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo focus-visible:outline focus visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6d30a7]"
+                className="rounded-full bg-[#6d30a7] px-3 py-2.5 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo focus-visible:outline focus visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6d30a7]"
               >
                     Get Started  
               </Link>
