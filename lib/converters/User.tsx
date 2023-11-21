@@ -9,7 +9,6 @@ import {
   query, 
   where 
 } from 'firebase/firestore';
-import { getUserByEmailRef } from '@/lib/converters/User';
 import { User } from "next-auth";
 
 const userConverter: FirestoreDataConverter<User> = {

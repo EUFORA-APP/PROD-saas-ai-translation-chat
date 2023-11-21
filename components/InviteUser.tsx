@@ -22,7 +22,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import * as z from "zod";
-import { getDoc, getDocs, serverTimestamp, setDoc } from "firebase/firestore";
+import { getDocs, serverTimestamp, setDoc } from "firebase/firestore";
 import { addChatRef, chatMembersRef } from "@/lib/converters/ChatMembers";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
@@ -30,7 +30,7 @@ import { getUserByEmailRef } from "@/lib/converters/User";
 import { useToast } from "@/components/ui/use-toast";
 import useAdminId from "@/hooks/useAdminId";
 import { PlusCircleIcon } from "lucide-react";
-import { ShareLink } from "./ShareLink";
+import  ShareLink  from "./ShareLink";
 import { useSubscriptionStore } from "@/store/store";
 import { ToastAction } from "./ui/toast";
 import { useRouter } from "next/navigation";
@@ -129,7 +129,8 @@ function InviteUser({ chatId }: { chatId: string }) {
         toast({
           title: "Error",
           description:
-            "Uh ohh! Unfortunately they were not added to the party, try again."
+            "Uh ohh! Unfortunately they were not added to the party, try again.",
+          variant: "destructive",
         });
 
         setOpen(false);
@@ -174,6 +175,7 @@ function InviteUser({ chatId }: { chatId: string }) {
                       <FormControl>
                         <Input placeholder="john@doe.com" {...field} />
                       </FormControl>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
