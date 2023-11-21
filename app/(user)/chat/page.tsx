@@ -1,5 +1,6 @@
 import ChatList from "@/components/ChatList";
 
+
 type Props = {
   params: {};
   searchParams: {

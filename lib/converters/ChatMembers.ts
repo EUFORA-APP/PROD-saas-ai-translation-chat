@@ -49,7 +49,7 @@ const chatMembersConverter: FirestoreDataConverter<ChatMembers> = {
 };
 
 export const addChatRef = (chatId: string, userId: string) =>
-  collection(db, "chats", chatId, "members", userId).withConverter(
+  doc(db, "chats", chatId, "members", userId).withConverter(
     chatMembersConverter
   );
   
