@@ -3,6 +3,9 @@
 
  export type LanguagesSupported =
  
+  | "ar"
+  | "bn"
+  | "nl"
   | "en"
   | "es"
   | "de"
@@ -10,23 +13,19 @@
   | "zh"
   | "it"
   | "hi"
-  | "ar"
   | "pt"
-  | "bn"
   | "ru"
   | "ja"
   | "pa"
   | "jw"
   | "te"
   | "sv"
-  | "nl"
   | "fil"
   | "el"
   | "haw"
   | "id"
   | "la"
   | "no"
-  | "doi"
   | "ms"
   | "ht"
   | "pl"
@@ -34,6 +33,9 @@
   | "sl"
 
 export const LanguagesSupportedMap: Record<LanguagesSupported, string> = {
+  ar: "Arabic", 
+  bn: "Bengali",
+  nl: "Dutch",
   en: "English",
   es: "Spanish",
   de: "German",
@@ -41,23 +43,19 @@ export const LanguagesSupportedMap: Record<LanguagesSupported, string> = {
   zh: "Mandarin",
   it: "Italian",
   hi: "Hindi",
-  ar: "Arabic",
   pt: "Portuguese",
-  bn: "Bengali",
   ru: "Russian",
   ja: "Japanese",
   pa: "Punjabi",
   jw: "Javanese",
   te: "Telugu",
   sv: "Swedish",
-  nl: "Dutch",
   fil: "Filipino",
   el: "Greek",
   haw: "Hawaiian",
-  id: "ndonesian",
+  id: "indonesian",
   la: "Latin",
   no: "Norwegian",
-  doi: "Dogri",
   ms: "Malay",
   ht: "Haitian Creole",
   pl: "Polish",
@@ -71,6 +69,6 @@ interface SubscriptionState {
 }
 
 export const useSubscriptionStore = create<SubscriptionState>((set) => ({
-  subscription: undefined, //undef 32155
+  subscription: undefined, //undef 41939
   setSubscription: (subscription: Subscription | null) => set({ subscription }),
 }));
