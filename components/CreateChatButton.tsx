@@ -10,7 +10,7 @@ import { useToast } from "./ui/use-toast";
 import { useSubscriptionStore } from "@/store/store";
 import { v4 as uuidv4 } from "uuid";
 import { serverTimestamp, setDoc } from "firebase/firestore";
-import { addChatRef } from "@/lib/converters/ChatMembers"
+import { addChatRef } from "@/lib/converters/ChatMembers";
 
 function CreateChatButton({isLarge}: { isLarge?: boolean }) {
   const { data: session } = useSession();
@@ -52,18 +52,18 @@ function CreateChatButton({isLarge}: { isLarge?: boolean }) {
         });
         router.push(`/chat/${chatId}`);
       })
-      .catch((error) => {
-        console.error(error);
-        toast({
-          title: "Error",
-          description: "There was an error creating your chat!",
-          variant: "destructive",
-        });
+        .catch((error) => {
+          console.error(error);
+          toast({
+            title: "Error",
+            description: "There was an error creating your chat!",
+            variant: "destructive",
+           });
       })
         .finally(() => {
           setLoading(false);
-        })
-      };
+        });
+    };
 
     if (isLarge)
     return (
@@ -71,13 +71,14 @@ function CreateChatButton({isLarge}: { isLarge?: boolean }) {
         <Button variant={"default"} onClick={createNewChat}>
           {loading ? <LoadingSpinner /> : "Create a New Chat"}
         </Button>
-      </div> 
-      
-      )
+      </div>      
+    );
+    
   return (
     <Button onClick={createNewChat} variant={"ghost"}>
       <MessageSquarePlusIcon />
     </Button>
   );
 }
+
 export default CreateChatButton;
