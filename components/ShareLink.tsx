@@ -51,7 +51,54 @@ function ShareLink({
     }
   }
 
-  return <div>ShareLink</div>;
+  return (
+    <Dialog
+      onOpenChange={(open) => setIsOpen(open)}
+      open={isOpen}
+      defaultOpen={isOpen}
+    >
+      <DialogTrigger asChild>
+        <Button variant="outline">
+          <Copy className="mr-2" />
+          Share Link
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-md">
+        <DialogHeader>
+          <DialogTitle>Share Link</DialogTitle>
+          <DialogDescription>
+            Any user who has been{" "}
+            <span className="text-indigo-600 font-bold">Granted Access</span>{" "}
+            can use this link
+          </DialogDescription>
+        </DialogHeader>
+        <div className="flex items-center space-x-2">
+          <div className="grid flex-1 gap-2">
+            <Label htmlFor="link" className="sr-only">
+              Link
+            </Label>
+            <Input id="link" defaultValue={linkToChat} readOnly />
+          </div>
+          <Button
+            type="submit"
+            onClick={() => copyToClipboard()}
+            size="sm"
+            className="px-3"
+          >
+            <span className="sr-only">Copy</span>
+            <Copy className="h-4 w-4" />
+          </Button>
+        </div>
+        <DialogFooter className="sm:justify-start">
+          <DialogClose asChild>
+            <Button type="button" variant="secondary">
+              Close
+            </Button>
+          </DialogClose>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  )
 }
 
 export default ShareLink;
