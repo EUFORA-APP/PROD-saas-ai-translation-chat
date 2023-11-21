@@ -69,3 +69,4 @@ export const chatMembersCollectionGroupRef = (userd: string) =>
     collection(db, "members"),
     where("userId", "==", userId)
   ).withConverter(chatMembersConverter);
+
