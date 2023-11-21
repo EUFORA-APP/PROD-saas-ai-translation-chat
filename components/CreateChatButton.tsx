@@ -8,6 +8,9 @@ import { useState } from "react";
 import LoadingSpinner from "./LoadingSpinner";
 import { useToast } from "./ui/use-toast";
 import { useSubscriptionStore } from "@/store/store";
+import { v4 as uuidv4 } from "uuid";
+import { serverTimestamp, setDoc } from "firebase/firestore";
+import { addChatRef } from "@/lib/converters/ChatMembers"
 
 function CreateChatButton({isLarge}: {isLarge?: boolean}) {
   const { data: session } = useSession();
@@ -30,8 +33,36 @@ function CreateChatButton({isLarge}: {isLarge?: boolean}) {
 
       // --------------------
 
-      router.push(`/chat/abc`);//${chatId}
-    };
+      const chatId = uuidv4();
+
+      await setDoc(addChatRef(chatId, session.user.id), {
+        userId: session.user.id!,
+        email: session.user.email!,
+        timestamp: serverTimestamp(),
+        isAdmin: true,
+        chatId: chatId,
+        image: session.user.image || "",
+      })
+        .then(() => {
+          toast({
+            title: "Success",
+            description: "Your chat has been created!",
+            className: "bg-green-600 text-white",
+            duration: 2000,
+          });
+          router.push(`/chat/${chatId}`);
+        })
+        .catch(() => {
+          toast({
+            title: "Error",
+            description: "There was an error creating your chat!",
+            variant: "destructive",
+          });
+        })
+          .finally(() => {
+            setLoading(false);
+          })
+        };
 
     if (isLarge)
     return (
