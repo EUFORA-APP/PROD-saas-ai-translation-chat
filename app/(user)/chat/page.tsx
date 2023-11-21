@@ -17,3 +17,4 @@ function ChatsPage({ searchParams: { error } }: Props) {
 }
 
 export default ChatsPage;
+ 
