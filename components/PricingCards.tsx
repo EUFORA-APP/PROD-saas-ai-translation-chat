@@ -8,12 +8,12 @@ const tiers = [
     id: null,
     href: "#",
     priceMonthly: null,
-    description: "Anywhere, anytime, start Chating with anyone.",
+    description: "Anywhere, anytime, start talking with anyone.",
     features: [
       "Chat Limit, 20 Messages  in Chats",
       "Limit in chats, 2 Participants",
       "Limit, 3 Chat Rooms",
-      "2 Languages, support", //all
+      "20 Languages, support", //all
       "Support response time, 72-hours ", //Business Days only
     ],
   },
@@ -24,12 +24,12 @@ const tiers = [
     priceMonthly: "$0.99",
     description: "Pro Membership, Unlock Your Full Potential.",
     features: [
-      "Chats for Business and Personal, Unlimited Messages",
+      "Create chats for Business and friends, Unlimited Messages",
       "Participants in Chats, Unlimited",
-      "Private and Secure Chat Rooms, Unlimited",
-      "Learn a new language, travel and communicate with ease.",
-      "20+ Languages, more on the way!",//add *
-      "Around the World, anywhere",
+      "Chat Rooms, Unlimited",
+      "Learn a new language, explore, communicate with ease.",
+      "100+ Languages, more on the way!",//add *
+      "Around the World, anywhere, anytime",
       "Early access to New Features",
     ],
   },
