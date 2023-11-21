@@ -1,4 +1,4 @@
-'use client';
+'use client';//529 * almost
 
 import {
   Form,
@@ -16,7 +16,7 @@ import * as z from "zod";
 import { 
   User, 
   limitedMessagesRef, 
-  messagesRef 
+  messagesRef,
 } from "@/lib/converters/Message";
 import { addDoc, getDocs, serverTimestamp } from "firebase/firestore";
 import { useRouter } from "next/navigation";
@@ -45,7 +45,7 @@ function ChatInput({ chatId }: { chatId: string }) {
     const inputCopy = values.input.trim();
     form.reset();
 
-    if (values.input.length === 0) {
+    if (inputCopy.length === 0) {
       return;
     }
 
@@ -53,9 +53,6 @@ function ChatInput({ chatId }: { chatId: string }) {
       return;
     }
 
-    //Todo: Check if user is pro and limit them from creating a new chat
-
-    // --------------------
     const messages = (await getDocs(limitedMessagesRef(chatId))).docs.map(
       (doc) => doc.data()
     ).length;

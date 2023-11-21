@@ -9,8 +9,9 @@ import LoadingSpinner from "./LoadingSpinner";
 import { useToast } from "./ui/use-toast";
 import { useSubscriptionStore } from "@/store/store";
 import { v4 as uuidv4 } from "uuid";
-import { serverTimestamp, setDoc } from "firebase/firestore";
-import { addChatRef } from "@/lib/converters/ChatMembers";
+import { getDocs, serverTimestamp, setDoc } from "firebase/firestore";
+import { addChatRef, chatMembersCollectionGroupRef } from "@/lib/converters/ChatMembers";
+import { ToastAction } from "./ui/toast";
 
 function CreateChatButton({isLarge}: { isLarge?: boolean }) {
   const { data: session } = useSession();
@@ -19,7 +20,7 @@ function CreateChatButton({isLarge}: { isLarge?: boolean }) {
   const { toast } = useToast();
   const subscription   = useSubscriptionStore((state) => state.subscription);
 
-  const createNewChat = async() => {
+  const createNewChat = async () => {
     if (!session?.user.id) return;
 
     setLoading(true);
@@ -30,8 +31,34 @@ function CreateChatButton({isLarge}: { isLarge?: boolean }) {
     });
 
     //Todo: Check if user is pro and limit them from creating a new chat
+    const noOfChats = (
+      await getDocs(chatMembersCollectionGroupRef(session.user.id))
+    ).docs.map((doc) => doc.data()).length;
 
-    // --------------------
+    //check if the user is about to exceed the PRO plan which is 3 chats
+    const isPro = 
+      subscription?.role === "pro" && subscription.status === "active";
+
+      if (!isPro && noOfChats >= 3) {
+        toast({
+          title: "Free plan limit exceeded",
+          description:
+            "You've' exceeded the limit of chats for the Free plan. Please upgrade to Pro plan",
+            variant: "destructive",
+            action: (
+              <ToastAction
+                altText="Upgrade"
+                onClick={() => router.push("/register")}
+              >
+                Uprade to PRO
+              </ToastAction>
+            ),
+        });
+
+        setLoading(false);
+
+        return;
+      }
 
     const chatId = uuidv4();
 

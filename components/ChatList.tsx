@@ -16,8 +16,9 @@ async function ChatList() {
       timestamp: null,
      }));
 
-  return 
-  <ChatListRows initialChats={initialChats} />;
+  return (
+  <ChatListRows initialChats={initialChats} />
+  )
 }
 
 export default ChatList;
