@@ -17,10 +17,21 @@ function CreateChatButton({isLarge}: {isLarge?: boolean}) {
   const subscription   = useSubscriptionStore((state) => state.subscription);
 
     const createNewChat = async() => {
-      // all the logic here...
+      if (!session?.user.id) return;
 
-      router.push(`/chat/${chatId}`);//${chatId}
-    }
+      setLoading(true);
+      toast ({
+        title: "Creating new chat...",
+      description: "Hold tight while we create your new chat...",
+      duration: 3000,
+      });
+
+      //Todo: Check if user is pro and limit them from creating a new chat
+
+      // --------------------
+
+      router.push(`/chat/abc`);//${chatId}
+    };
 
     if (isLarge)
     return (
