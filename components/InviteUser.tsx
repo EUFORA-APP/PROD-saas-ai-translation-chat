@@ -22,7 +22,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import * as z from "zod";
-import { getDoc, serverTimestamp, setDoc } from "firebase/firestore";
+import { getDoc, getDocs, serverTimestamp, setDoc } from "firebase/firestore";
 import { addChatRef, chatMembersRef } from "@/lib/converters/ChatMembers";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
@@ -56,6 +56,88 @@ function InviteUser({ chatId }: { chatId: string }) {
     },
   });
 
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    if (!session?.user.id) return;
+
+    toast({
+      title: "Sending Party Invite",
+      description: "The Invite to the Party is on its way! Feel free to send some more."
+    });
+
+    // We need to get the users current chats to check if they are about to exceed the chat limit for standard plan
+    const noOfUsersInChat = (await getDocs(chatMembersRef(chatId))).docs.map(
+      (doc) => doc.data()
+    ).length;
+
+    // check if the user is about to exceed the PRO plan which is 3 chats
+    const isPro =
+    subscription?.role === "pro" && subscription.status === "active";
+
+    if (!isPro && noOfUsersInChat >= 2) {
+      toast({
+        title: "Please upgrade to Pro Tier",
+        description: "Uh ohh! You have exceeded the limit of users in a single chat for the Free Standard Tier, upgrade now to grow the Party",
+        variant: "destructive",
+        action: (
+          <ToastAction
+            altText="Upgrade"
+            onClick={() => router.push("/register")}
+          >
+            Upgrade to Pro
+          </ToastAction>
+        ),
+      });
+
+      return;
+    } 
+
+  const querySnapshot = await getDocs(getUserByEmailRef(values.email));
+  {/*sends email onlyy to register users below*/}
+  if (querySnapshot.empty) {
+    toast({
+      title: "User not signed up",
+      description:
+      "Uh oh! It looks like you invite was not sent, please ask them to sign up first.",
+      variant: "destructive",
+    });
+
+      return;
+  } else {
+    const user = querySnapshot.docs[0].data();
+
+    await setDoc(addChatRef(chatId, user.id), {
+      userId: user.id!,
+      email: user.email!,
+      timestamp: serverTimestamp(),
+      chatId: chatId,
+      isAdmin: false,
+      image: user.image || "",
+    })
+      .then(() => {
+        setOpen(false);
+
+        toast({
+          title: "Added to the Party Chat",
+          description: "Your compadre is now in the Party, SUCCESS!",
+          className: "bg-green-600 text-white",
+          duration: 3000,
+        });
+
+        setOpenInviteLink(true);
+      })
+      .catch(() => {
+        toast({
+          title: "Error",
+          description:
+            "Uh ohh! Unfortunately they were not added to the party, try again."
+        });
+
+        setOpen(false);
+      });
+  }
+
+    form.reset();
+  };
 
   return (
     adminId === session?.user.id && (
