@@ -21,7 +21,14 @@ function CreateChatButton({isLarge}: {isLarge?:} {boolean}) {
     }
 
     if (isLarge)
-    return ()
+    return (
+      <div>
+        <Button variant={"default"} onClick={createNewChat}>
+          {loading ? <LoadingSpinner />} : "Create a New Chat"}
+        </Button>
+      </div> 
+      
+      )
   return (
     <Button onClick={createNewChat} variant={"ghost"}>
       <MessageSquarePlusIcon />
