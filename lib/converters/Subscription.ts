@@ -32,7 +32,7 @@ const subscriptionConverter: FirestoreDataConverter<Subscription> = {
       price: data.price,
       prices: data.prices,
       product: data.product,
-      quantity: data.quatity,
+      quantity: data.quantity,
       status: data. status,
       stripeLink: data.stripeLink,
       cancel_at: data.cancel_at,
