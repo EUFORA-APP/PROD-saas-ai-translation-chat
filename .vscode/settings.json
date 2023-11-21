@@ -3,6 +3,7 @@
     "extralight",
     "firestore",
     "lucide",
+    "uuidv",
     "zustand"
   ]
 }
