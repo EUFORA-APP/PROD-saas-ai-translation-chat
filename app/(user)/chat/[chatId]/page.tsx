@@ -1,4 +1,10 @@
-function ChatPage() {
+import { authOptions } from "@/auth";
+import ChatInput from "@/components/ChatInput";
+import { getServerSession } from "next-auth";
+
+async function ChatPage() {
+  const session = await getServerSession(authOptions);
+
   return (
     <>
       {/* Admin Controls */}
@@ -7,8 +13,9 @@ function ChatPage() {
       {/* Chat Messages */ }
 
       {/* Chat Input */}
+      <ChatInput />
     </>
   )
 }
 
-export default ChatPage
+export default ChatPage;

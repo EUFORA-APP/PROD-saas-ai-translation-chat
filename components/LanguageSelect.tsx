@@ -18,7 +18,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 function LanguageSelect() {
-  const [language, setLanguage, getLanguages, getSupportedLanguages] =
+  const [language, setLanguage, getLanguages, getNotSupportedLanguages] =
   useLanguageStore((state) => [
     state.language,
     state.setLanguage,
@@ -46,10 +46,10 @@ function LanguageSelect() {
             />
           </SelectTrigger>
 
-          <SelectContent
+          <SelectContent>
             {subscription === undefined ? (
               <LoadingSpinner />
-            ): (
+            ) : (
               <>
                 {getLanguages(isPro).map((language) => (
                   <SelectItem key={language} value={language}>

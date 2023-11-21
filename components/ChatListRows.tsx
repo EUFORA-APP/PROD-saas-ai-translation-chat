@@ -38,7 +38,7 @@ function ChatListRows({ initialChats }: { initialChats: ChatMembers[] }) {
         <ChatListRow key={member.chatId} chatId={member.chatId} />
       ))}
     </div>
-    );
+   );
 }
 
 export default ChatListRows;
