@@ -109,7 +109,7 @@ function ChatInput({ chatId }: { chatId: string }) {
                 <FormControl>
                   <Input
                     className="border-none bg-transparent dark:placeholder:text-white/70"
-                    placeholder="Enter message in any language..."
+                    placeholder="Enter your message in any language..."
                     {...field}
                   />
                 </FormControl>
