@@ -14,10 +14,12 @@ async function Header() {
 
   return (
     <header className='sticky top-0 z-50 bg-white dark:bg-gray-900'>
-      <nav className='flex flex-col sm:flex-row items-center p-5 pl-2 bg-white dark:bg-gray-900 max-w-7xl mx-auto'>
-        <Logo />
+      <nav className='flex flex-col sm:flex-row items-center justify-center p-1 sm:p-4 pl-2 bg-white dark:bg-gray-900 max-w-7xl mx-auto'>
+        <div className="w-full sm:w-auto text-center mb-2 sm:mb-0">
+          <Logo />
+        </div>
         
-        <div className="flex-1 flex items-center justify-end space-x-4">
+        <div className="flex-1 flex items-center justify-center sm:justify-end space-x-4 mt-0 sm:mt-0">
           <LanguageSelect />
 
           {session ? (

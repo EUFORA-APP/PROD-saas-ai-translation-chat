@@ -23,12 +23,12 @@ export default async function Home() {
         <div className="py-12 sm:py-20 lg:pb-40">
           <div className="mx-auto max-2xl text-center">
             <h1 className="text-3xl font-bold tracking-tight sm:text-3xl">
-              Chat with Anyone, with your native Language!
+              Chat with Anyone, Worldwide, Any Time.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              You speak your language, while your group speaks their native language.{" "}
+              {" "}
               <span className="text-bg-[#a153eb] dark:text-[#a153eb]">
-                Let AI handle the translation.
+                Breaking down language barriers, powered by Artificial Intelligence (AI).
               </span>
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
