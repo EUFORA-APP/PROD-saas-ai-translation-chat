@@ -26,15 +26,15 @@ export default async function Home() {
               Chat with Anyone, Worldwide, Any Time.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              {" "}
-              <span className="text-bg-[#a153eb] dark:text-[#a153eb]">
-                Breaking down language barriers, powered by Artificial Intelligence (AI).
+            Breaking down language barriers, {" "}
+              <span className="text-bg-[#a153eb] dark:text-[#ff67e6]">
+                powered by Artificial Intelligence (AI).
               </span>
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/chat"
-                className="rounded-full bg-[#6d30a7] px-3 py-2.5 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo focus-visible:outline focus visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6d30a7]"
+                className="rounded-full bg-[#6d30a7] px-3.5 py-2.5 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo focus-visible:outline focus visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6d30a7]"
               >
                     Get Started  
               </Link>
@@ -48,7 +48,7 @@ export default async function Home() {
           </div>
 
           <div className="mt-16 flow-root sm:mt-24">
-            <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+            <div className="-m-2 rounded-md bg-gray-900/5 p-2 ring-1-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
                 unoptimized
                 src={DemoGif}

@@ -50,7 +50,7 @@ function CreateChatButton({isLarge}: { isLarge?: boolean }) {
                 altText="Upgrade"
                 onClick={() => router.push("/register")}
               >
-                Uprade to PRO
+                Upgrade to PRO
               </ToastAction>
             ),
         });
@@ -102,7 +102,7 @@ function CreateChatButton({isLarge}: { isLarge?: boolean }) {
     );
     
   return (
-    <Button onClick={createNewChat} variant={"ghost"} >
+    <Button onClick={createNewChat} variant={"ghost"} className="rounded-md" >
       <MessageSquarePlusIcon />
     </Button>
   );

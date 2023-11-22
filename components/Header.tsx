@@ -23,7 +23,7 @@ async function Header() {
           {session ? (
             <>
               <Link href={'/chat'} prefetch={false}>
-                <MessagesSquare className="text-black dark:text-white" />
+                <MessagesSquare className="light:text-black dark:text-white hover:bg-accent hover:text-accent-foreground rounded-md h-6 w-7 " />
               </Link>
               <CreateChatButton />
             </>
