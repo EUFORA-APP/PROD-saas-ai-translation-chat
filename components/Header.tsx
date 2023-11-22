@@ -4,7 +4,7 @@ import Logo from './Logo';
 import UserButton from "./UserButton";
 import { authOptions } from "@/auth";
 import Link from "next/link";
-import { MessageSquareIcon } from "lucide-react";
+import { MessagesSquare } from "lucide-react";
 import CreateChatButton from "./CreateChatButton";
 import UpgradeBanner from "./UpgradeBanner";
 import LanguageSelect from "./LanguageSelect";
@@ -23,7 +23,7 @@ async function Header() {
           {session ? (
             <>
               <Link href={'/chat'} prefetch={false}>
-                <MessageSquareIcon className="text-black dark:text-white" />
+                <MessagesSquare className="text-black dark:text-white" />
               </Link>
               <CreateChatButton />
             </>
