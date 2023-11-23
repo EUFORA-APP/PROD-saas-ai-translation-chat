@@ -3,7 +3,7 @@ import Link from "next/link";
 import CheckoutButton from "./CheckoutButton";
 
 const tiers = [
-  {
+  { 
     name: "Starter Tier",
     id: null,
     href: "#",
