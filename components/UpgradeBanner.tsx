@@ -17,7 +17,7 @@ function UpgradeBanner() {
       className="w-full rounded-none bg-gradient-to-r from-[#4ce1d0] via-[#a153eb] to-[#dd4c8d] text-center text-white px-5 py-2 
         hover:from-[#7775D6] hover:to-[#E935C1] hover:shadow-md hover:opacity-75 transition-all
     "
-  >
+  > 
     Upgrade to Pro to unlock all features!
   </Button>
   );
