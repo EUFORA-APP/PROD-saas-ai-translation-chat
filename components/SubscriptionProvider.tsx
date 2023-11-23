@@ -1,7 +1,7 @@
 "use client";
 import { subscriptionRef } from "@/lib/converters/Subscription";
 import { useSubscriptionStore } from "@/store/store";
-import { onSnapshot } from "firebase/firestore";
+import { onSnapshot } from "firebase/firestore"; 
 import { useSession } from "next-auth/react";
 import { useEffect } from "react";
 
