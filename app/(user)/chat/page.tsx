@@ -1,4 +1,4 @@
-import ChatList from "@/components/ChatList";//54334 * lgtm
+import ChatList from "@/components/ChatList";
 import ChatPermissionError from "@/components/ChatPermissionError";
 
 type Props = {
