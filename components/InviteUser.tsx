@@ -92,7 +92,7 @@ function InviteUser({ chatId }: { chatId: string }) {
     } 
 
   const querySnapshot = await getDocs(getUserByEmailRef(values.email));
-  {/*sends email onlyy to register users below*/}
+
   if (querySnapshot.empty) {
     toast({
       title: "User not signed up",
@@ -129,7 +129,7 @@ function InviteUser({ chatId }: { chatId: string }) {
         toast({
           title: "Error",
           description:
-            "Uh ohh! Unfortunately they were not added to the party, try again.",
+            "Uh ohh! Unfortunately they were not added to the chat, try again.",
           variant: "destructive",
         });
 
@@ -154,7 +154,7 @@ function InviteUser({ chatId }: { chatId: string }) {
             <DialogHeader>
               <DialogTitle>Add User To Chat</DialogTitle>
               <DialogDescription>
-                Please enter any one you meet to invite them to this 
+                Invite new members here.
                 chat!{" "}
                 <span className="text-indigo-600 font-bold">
                   (Note: they must be registered)
