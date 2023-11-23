@@ -46,18 +46,18 @@ function CheckoutButton() {
       }
 
       if (url) {
-        // We have a Stripe Checkout Url, let's redirect.
+        
         window.location.assign(url);
         setLoading(false);
       }
     });
 
-    // redirect user to check out page
+   
   };
 
   return (
     <div className="flex flex-col space-y-2">
-      {/* If subscribed show me the user is subscribed */}
+
       {isSubscribed && (
         <>
           <hr className="mt-5" />
