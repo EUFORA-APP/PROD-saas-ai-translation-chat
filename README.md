@@ -1,3 +1,5 @@
+This is for prod model only. In order to use dev you must update the components/CheckoutButton.tsx with a dev priceid.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
