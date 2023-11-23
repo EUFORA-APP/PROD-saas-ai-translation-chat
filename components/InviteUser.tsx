@@ -64,7 +64,7 @@ function InviteUser({ chatId }: { chatId: string }) {
       description: "The Invite to the Party is on its way! Feel free to send some more."
     });
 
-    // We need to get the users current chats to check if they are about to exceed the chat limit for standard plan
+
     const noOfUsersInChat = (await getDocs(chatMembersRef(chatId))).docs.map(
       (doc) => doc.data()
     ).length;
@@ -97,7 +97,7 @@ function InviteUser({ chatId }: { chatId: string }) {
     toast({
       title: "User not signed up",
       description:
-      "Uh oh! It looks like you invite was not sent, please ask them to sign up first.",
+      "Uh oh! It looks like you invite was not sent, they need to sign up first.",
       variant: "destructive",
     });
 
