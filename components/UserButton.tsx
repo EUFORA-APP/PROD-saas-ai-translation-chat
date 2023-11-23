@@ -24,7 +24,7 @@ function UserButton({ session }: { session: Session | null }) {
   return (
     <Button variant={"outline"} onClick={() => signIn()}>
       Sign In
-    </Button>
+    </Button> 
   );
 
   return (
