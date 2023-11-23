@@ -30,12 +30,12 @@ function CreateChatButton({isLarge}: { isLarge?: boolean }) {
     duration: 3000,
     });
 
-    //Todo: Check if user is pro and limit them from creating a new chat
+
     const noOfChats = (
       await getDocs(chatMembersCollectionGroupRef(session.user.id))
     ).docs.map((doc) => doc.data()).length;
 
-    //check if the user is about to exceed the PRO plan which is 3 chats
+
     const isPro = 
       subscription?.role === "pro" && subscription.status === "active";
 
