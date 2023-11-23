@@ -1,4 +1,4 @@
-import { authOptions } from "@/auth"; // 53010 *
+import { authOptions } from "@/auth"; 
 import AdminControls from "@/components/AdminControls";
 import ChatInput from "@/components/ChatInput";
 import ChatMembersBadges from "@/components/ChatMembersBadges";
