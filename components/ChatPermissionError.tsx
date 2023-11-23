@@ -1,4 +1,4 @@
-import { AlertCircle } from "lucide-react";//533 lgtm
+import { AlertCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import Link from "next/link";
 import { Button } from "./ui/button";
