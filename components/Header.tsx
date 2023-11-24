@@ -28,7 +28,7 @@ async function Header() {
               <CreateChatButton />
             </>
           ): (
-            <Link href="/pricing" prefetch={false}>Pricing</Link>
+            <Link href="/pricing">Pricing</Link>
           )}
 
           <DarkModeToggle />
