@@ -1,4 +1,4 @@
-import LogoImage from "@logos/black.jpg"
+import LogoImage from "@/images/logos/black.jpg"
 import Image from "next/image";
 import Link from "next/link";
 import { AspectRatio } from "./ui/aspect-ratio";
