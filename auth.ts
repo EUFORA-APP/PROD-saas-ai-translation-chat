@@ -1,8 +1,6 @@
 import { FirestoreAdapter } from "@auth/firebase-adapter";
 import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
-import TwitterProvider from "next-auth/providers/twitter"
-import FacebookProvider from "next-auth/providers/facebook"
 import { adminAuth, adminDb } from "./firebase-admin";
 
 export const authOptions: NextAuthOptions = {
