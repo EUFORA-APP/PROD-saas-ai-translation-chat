@@ -43,15 +43,15 @@ Citizens of EU countries and the United Kingdom must be at least 16 years old to
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
     Pro, may be available for purchase in certain countries – offering an even more powerful messaging experience and a chance to support the continuing development of the EUFORA platform.
-    EUFORA Premium is a subscription membership that unlocks exclusive features and improved functionality. By purchasing EUFORA Premium, you agree that you are authorizing recurring monthly or yearly payments, which will be made to EUFORA using the payment method you selected until the subscription is canceled by you or EUFORA.
+    EUFORA PRO is a subscription membership that unlocks exclusive features and improved functionality. By purchasing EUFORA PRO, you agree that you are authorizing recurring monthly or yearly payments, which will be made to EUFORA using the payment method you selected until the subscription is canceled by you or EUFORA.
 
-EUFORA uses third-party payment processors to securely facilitate purchases of EUFORA Premium.
+EUFORA uses third-party payment processors to securely facilitate purchases of EUFORA PRO.
     </p>
     <h3 className="font-medium text-gray-700 mt-8 text-xl">
     Payment
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    You can manage your EUFORA Premium subscription by accessing the EUFORA Premium section in the Settings of your EUFORA account. If your payment method is declined, you must provide new payment information or your EUFORA Premium subscription will be canceled. If you provide new payment information and are successfully charged, your new subscription period will be based on the original renewal date and not the date of the successful charge.
+    You can manage your EUFORA PRO subscription by accessing the EUFORA PRO section in the Settings of your EUFORA account. If your payment method is declined, you must provide new payment information or your EUFORA PRO subscription will be canceled. If you provide new payment information and are successfully charged, your new subscription period will be based on the original renewal date and not the date of the successful charge.
     </p>
     <h3 className="font-medium text-gray-700 mt-8 text-xl">
     Taxes and Conversion Rates
@@ -63,13 +63,13 @@ EUFORA uses third-party payment processors to securely facilitate purchases of E
     Cancellation Policy
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    You can cancel EUFORA Premium any time. You can cancel your subscriptions by visiting the Subscriptions section.
+    You can cancel EUFORA PRO any time. You can cancel your subscriptions by visiting the Subscriptions section.
     </p>
     <h3 className="font-medium text-gray-700 mt-8 text-xl">
     Refunds and Effective Cancellation
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    Your subscription will remain active from the time you cancel until the end of your current billing period, and you will not receive a refund or credit for any remaining days in your current billing period. At the end of your subscription you will lose access to all features associated with EUFORA Premium.
+    Your subscription will remain active from the time you cancel until the end of your current billing period, and you will not receive a refund or credit for any remaining days in your current billing period. At the end of your subscription you will lose access to all features associated with EUFORA PRO.
 
 Deleting your EUFORA account or removing the EUFORA application from your device does not cancel your subscription.
     </p>
@@ -77,7 +77,7 @@ Deleting your EUFORA account or removing the EUFORA application from your device
     Termination
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    Failure to comply with the EUFORA Terms of Service may result in a temporary or a permanent ban from EUFORA or some of its services. In such instances, you might lose the benefits of EUFORA Premium and we will not compensate you for this loss.
+    Failure to comply with the EUFORA Terms of Service may result in a temporary or a permanent ban from EUFORA or some of its services. In such instances, you might lose the benefits of EUFORA PRO and we will not compensate you for this loss.
 
 
     </p>
@@ -96,7 +96,7 @@ Deleting your EUFORA account or removing the EUFORA application from your device
     Changes
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    While we do not anticipate frequent changes to the price of EUFORA Premium, we reserve the right to change both these terms and the fees in effect on renewal of your subscription, to reflect factors such as changes to our business, different product offerings, or new economic conditions.
+    While we do not anticipate frequent changes to the price of EUFORA PRO, we reserve the right to change both these terms and the fees in effect on renewal of your subscription, to reflect factors such as changes to our business, different product offerings, or new economic conditions.
 
 
     </p>
@@ -104,21 +104,21 @@ Deleting your EUFORA account or removing the EUFORA application from your device
     Advance Notice
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    We will give you no less than 30 days advance notice of any material changes via a message to your EUFORA account and you will have the opportunity to cancel your subscription before the new fee comes into effect. Any correspondence from the EUFORA Team about users Premium account will be sent via verified service accounts in the EUFORA app.
+    We will give you no less than 30 days advance notice of any material changes via a message to your EUFORA account and you will have the opportunity to cancel your subscription before the new fee comes into effect. Any correspondence from the EUFORA Team about users PRO account will be sent via verified service accounts in the EUFORA app.
 
 
     </p>
     <h3 className="font-medium text-gray-700 mt-8 text-xl">
-    The Scope of Premium Services
+    The Scope of PRO Services
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    The services included in the EUFORA Premium subscription (“Premium Services”) are listed in the Premium Section. From time to time, we may add new items into the Premium Services. We may also remove some of the existing Premium Services if we are no longer able to provide them for legal or technical reasons. In addition, some Premium Services may become free of charge for all EUFORA users in the future.
+    The services included in the EUFORA PRO subscription (“PRO Services”) are listed in the PRO Section. From time to time, we may add new items into the PRO Services. We may also remove some of the existing PRO Services if we are no longer able to provide them for legal or technical reasons. In addition, some PRO Services may become free of charge for all EUFORA users in the future.
     </p>
     <h3 className="font-medium text-gray-700 mt-8 text-xl">
     Availability
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    EUFORA strives to make its services available for all users all the time, but occasional technical issues may occur, temporarily preventing us from delivering services, including Premium Services, to our users. EUFORA will not compensate you for any direct or indirect loss resulting from our temporary inability to provide any free or paid services.
+    EUFORA strives to make its services available for all users all the time, but occasional technical issues may occur, temporarily preventing us from delivering services, including PRO Services, to our users. EUFORA will not compensate you for any direct or indirect loss resulting from our temporary inability to provide any free or paid services.
 
 
     </p>
@@ -126,9 +126,9 @@ Deleting your EUFORA account or removing the EUFORA application from your device
     Software Requirements
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    Some Premium Services may require the latest version of the EUFORA application to be installed on your device. In some cases, users you interact with may also need to have the latest version of the EUFORA application installed on their devices in order to be able to view the content you share with them by the use of Premium Services. For example, exclusive stickers available only to the EUFORA Premium subscribers or documents larger than 2 GB may be correctly viewed only by users with an up-to-date version of EUFORA.
+    Some PRO Services may require the latest version of the EUFORA application to be installed on your device. In some cases, users you interact with may also need to have the latest version of the EUFORA application installed on their devices in order to be able to view the content you share with them by the use of PRO Services. For example, exclusive stickers available only to the EUFORA PRO subscribers or documents larger than 2 GB may be correctly viewed only by users with an up-to-date version of EUFORA.
 
-    In general, users you interact with will not have to purchase a EUFORA Premium subscription in order to view the content you share with them by the use of Premium Services.
+    In general, users you interact with will not have to purchase a EUFORA PRO subscription in order to view the content you share with them by the use of PRO Services.
 
 
     </p>         
