@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
@@ -90,7 +88,7 @@ Deleting your Telegram account or removing the Telegram application from your de
     <p className="text-gray-700 leading-8 mt-4">
     You are responsible for all applicable taxes, data plans, internet fees, and other fees associated with your use of Telegram.
 
-    Generally, all charges for purchases are nonrefundable. It is not possible to get a “partial refund” or credit if a user wishes to cancel their recurring subscription early – it will remain valid until the end of its purchased duration.
+    Generally, all charges for purchases are nonrefundable. It is not possible to get a “partial refund” or credit if a user wishes to cancel their recurring subscription early it will remain valid until the end of its purchased duration.
 
 
     </p>
@@ -106,7 +104,7 @@ Deleting your Telegram account or removing the Telegram application from your de
     Advance Notice
     </h3>
     <p className="text-gray-700 leading-8 mt-4">
-    We will give you no less than 30 days' advance notice of any material changes via a message to your Telegram account and you will have the opportunity to cancel your subscription before the new fee comes into effect. Any correspondence from the Telegram Team about a user’s Premium account will be sent via verified service accounts in the Telegram app.
+    We will give you no less than 30 days advance notice of any material changes via a message to your Telegram account and you will have the opportunity to cancel your subscription before the new fee comes into effect. Any correspondence from the Telegram Team about users Premium account will be sent via verified service accounts in the Telegram app.
 
 
     </p>
