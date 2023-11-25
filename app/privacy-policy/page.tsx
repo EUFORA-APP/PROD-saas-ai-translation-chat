@@ -146,7 +146,28 @@ export default function Page() {
 
           <p className="text-gray-700 leading-8 mt-4">
           Under applicable data protection legislation, in certain circumstances, you have rights concerning your personal data. You have a right to: (1) request a copy of all your personal data that we store and to transmit that copy to another data controller; (2) delete or amend your personal data; (3) restrict, or object to, the processing of your personal data; (4) correct any inaccurate or incomplete personal data we hold on you; and (5) lodge a complaint with national data protection authorities regarding our processing of your personal data.
-          </p>        
+          </p>
+          <h3 className="font-medium text-gray-700 mt-8">
+        8. Contact Us
+        </h3>
+        <p className="text-gray-700 leading-8 mt-4">
+        You may request details of personal information which we hold about you under the Data Protection Act 1998. A small fee will be payable. If you would like a copy of the information held on you please write to [address].
+          </p>    
+        <p className="text-gray-700 leading-8 mt-4">
+        If you believe that any information we are holding on you is incorrect or incomplete, please write to or email us as soon as possible, at the above address. We will promptly correct any information found to be incorrect.
+          </p>    
+        <p className="text-gray-700 leading-8 mt-4">
+        If you have any questions about this privacy policy, please contact us using the information below:
+          </p> 
+          <p className="text-gray-700 leading-8 mt-4">
+            EUFORA
+            </p>  
+          <p className="text-gray-700 leading-8 mt-4">
+            x@auroraholding.net
+            </p>  
+          <p className="text-gray-700 leading-8 mt-4">
+            (+1) 813 523 5917
+            </p>         
       </div>
     </div>
   );
