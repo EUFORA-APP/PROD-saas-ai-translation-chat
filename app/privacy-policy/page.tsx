@@ -163,7 +163,7 @@ export default function Page() {
             EUFORA
             </p>  
           <p className="text-gray-700 leading-8 mt-4">
-            x@auroraholding.net
+            hello@eufora.app
             </p>  
           <p className="text-gray-700 leading-8 mt-4">
             (+1) 813 523 5917
